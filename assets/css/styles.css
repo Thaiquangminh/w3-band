@@ -1,0 +1,530 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --header-height: 46px;
+}
+
+button {
+    cursor: pointer;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 62.5%;
+}
+
+/* HEADER */
+
+.header {
+    display: flex;
+    height: var(--header-height);
+    background-color: black;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+.bar {
+    display: flex;
+    line-height: 46px;
+}
+
+.bar li {
+    list-style: none;
+}
+
+.bar > li > a {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.bar li a {
+    text-decoration: none;
+    padding: 0 24px;
+    font-size: 1.6rem;
+}
+.sub-bar li {
+    height: 100%;
+}
+
+.bar .sub-bar li:hover a,
+.bar .mobile-display:hover {
+    cursor: pointer;
+    background-color: #ccc;
+    display: inline-block;
+}
+
+.more-btn {
+    position: relative;
+}
+.bar .sub-bar {
+    display: none;
+    top: var(--header-height);
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.bar .sub-bar a {
+    color: black;
+    width: 100%;
+    padding: auto 24px;
+}
+
+.more-btn:hover > a ~ .sub-bar {
+    display: block;
+}
+
+.bar .nav-arrow-down {
+    font-size: 1.4rem;
+    margin-left: 4px;
+}
+
+.header-search,
+.header-mobile-menu {
+    font-size: 1.6rem;
+    color: white;
+    height: 100%;
+    width: 61px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-mobile-menu {
+    display: none;
+}
+.header-mobile-menu:hover {
+    background-color: #ccc;
+}
+.header-search:hover {
+    background-color: #f44336;
+}
+
+/* SLIDER */
+
+.slider {
+    margin-top: 46px;
+    padding-top: 50%;
+    background-image: url('../img/ny.jpeg');
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+}
+
+.text-content {
+    position: absolute;
+    color: white;
+    bottom: 47px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.text-heading {
+    font-size: 2.4rem;
+    margin-bottom: 25px;
+    font-weight: 500;
+}
+.text-description {
+    font-size: 1.5rem;
+    text-shadow: 0 0 1px white;
+}
+
+/* CONTENT */
+
+.content-section {
+    width: 65%;
+    margin: 0 auto;
+    padding: 64px 16px;
+}
+.header-section {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 3rem;
+    margin-bottom: 25px;
+    letter-spacing: 4px;
+}
+.sub-header-section {
+    text-align: center;
+    opacity: 0.6;
+    margin-bottom: 15px;
+    font-style: italic;
+    font-size: 1.5rem;
+}
+.content-description {
+    text-align: justify;
+    line-height: 2rem;
+    font-size: 1.5rem;
+}
+
+/* THE BAND */
+
+.member {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 32px 0;
+}
+
+.band-member-img {
+    width: 154px;
+    height: 154px;
+    border-radius: 4px;
+}
+
+.band-member-name {
+    font-size: 1.5rem;
+    margin: 15px 0;
+    text-align: center;
+}
+
+/* TOUR DATES */
+
+.wrapper {
+    width: 100%;
+    background-color: black;
+}
+
+.wrapper .header-section,
+.wrapper .sub-header-section {
+    color: #fff;
+}
+
+.ticket-list {
+    width: 100%;
+    margin: 33px 0 auto;
+}
+
+.ticket-status {
+    width: 100%;
+    margin: 0 auto;
+    height: 40px;
+    background-color: #fff;
+    border-bottom: 1px solid #757575;
+    display: flex;
+    align-items: center;
+    color: #757575;
+}
+
+.date,
+.status {
+    line-height: 40px;
+    font-size: 1.5rem;
+}
+.date {
+    width: 15%;
+    margin-left: 15px;
+}
+.status {
+    margin-left: 10px;
+    padding: 0 8px;
+    background-color: #f44336;
+    color: #fff;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.set-position-november-onstock {
+    height: 100%;
+}
+
+.onstock {
+    background-color: black;
+    color: white;
+    font-size: 1.4rem;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    line-height: 30px;
+    position: relative;
+    left: 70%;
+    border-radius: 50%;
+}
+
+.place-list {
+    padding: 32px 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.place-item {
+    width: 32%;
+    background-color: #fff;
+}
+
+.place-img {
+    width: 100%;
+}
+.place-body {
+    padding: 0 16px;
+    line-height: 2.25rem;
+    font-size: 1.5rem;
+}
+.place-header {
+    margin: 15px 0;
+}
+.place-date {
+    opacity: 0.6;
+    margin: 15px 0;
+}
+.place-desciption {
+    margin: 15px 0;
+}
+
+.place-button {
+    margin-bottom: 16px;
+    padding: 10px 16px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    font-size: 1.5rem;
+}
+
+.place-button:hover {
+    cursor: pointer;
+    background-color: #ccc;
+    color: black;
+}
+
+/* OverLay */
+
+.over-lay {
+    height: 100%;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    animation: animationBuy ease 0.7s;
+}
+
+.container {
+    top: 50%;
+    transform: translateY(-50%);
+    height: 70%;
+    width: 60%;
+    margin: 0 auto;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: rgba(0, 0, 0, 0.2);
+    position: relative;
+    background-color: #fff;
+}
+
+.container button:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
+.modal-header-close {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    padding: 16px 16px;
+    color: white;
+    font-size: 1.5rem;
+    border: none;
+    background-color: #009688;
+}
+
+.modal-header {
+    background-color: #009688;
+    height: 130px;
+    line-height: 130px;
+    text-align: center;
+    color: #fff;
+    font-size: 3rem;
+    letter-spacing: 0.4rem;
+    font-weight: 400;
+}
+
+.modal-content {
+    margin: 20px;
+}
+.modal-form-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin: 20px 0;
+}
+
+.modal-content-label {
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.modal-content-input {
+    padding: 10px 10px;
+    font-size: 1.5rem;
+}
+
+.modal-pay-btn {
+    width: 100%;
+    padding: 16px 0;
+    background-color: #009688;
+    border: none;
+    font-size: 1.8rem;
+    color: #fff;
+}
+
+.modal-pay-btn > .ti-check {
+    font-size: 1.4rem;
+    margin-left: 5px;
+}
+
+.modal-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px 0;
+    font-size: 1.6rem;
+}
+.modal-footer-button {
+    background-color: #f44336;
+    color: #fff;
+    padding: 8px 16px;
+    font-size: 1.5rem;
+    border: none;
+}
+
+.modal-footer-button > .ti-close {
+    font-size: 1rem;
+}
+
+.open {
+    display: block;
+}
+
+@keyframes animationBuy {
+    from {
+        opacity: 0;
+        transform: translateY(-150px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Contact */
+
+.wrapper-contact {
+    background-color: #fff;
+    color: #000;
+}
+
+.contact-content.df {
+    display: flex;
+}
+
+.contact-content .contact-group a {
+    color: #0000ee;
+    opacity: 0.7;
+}
+
+.contact-content .contact-group a:hover {
+    opacity: 1;
+}
+
+.contact-content-about {
+    width: 49%;
+    margin-top: 47px;
+}
+
+.contact-group {
+    display: flex;
+    font-size: 1.6rem;
+    margin-bottom: 18px;
+}
+
+.contact-text {
+    margin-left: 15px;
+    font-weight: 500;
+}
+
+.contact-name-email {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.contact-input.message {
+    width: 100% !important;
+}
+
+.contact-input {
+    padding: 10px;
+    font-size: 1.5rem;
+    border: 1px solid #ccc;
+    width: 48%;
+    outline: none;
+}
+
+.contact-button {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    margin-top: 16px;
+}
+
+.contact-submit-btn {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 10px 16px;
+    -webkit-appearance: none;
+}
+
+.contact-submit-btn:hover {
+    background-color: #ccc;
+    color: #000;
+    cursor: pointer;
+}
+
+/* Map */
+.wrapper-map .map {
+    width: 100%;
+}
+
+/* Footer */
+.footer {
+    background-color: #f1f1f1;
+    opacity: 0.6;
+}
+
+.social-list {
+    padding: 64px 16px;
+    color: #000;
+    text-align: center;
+    font-size: 2.1rem;
+}
+
+.social-list i {
+    color: #000;
+}
+
+.social-list a {
+    text-decoration: none;
+}
+
+.footer-text {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 20px;
+}

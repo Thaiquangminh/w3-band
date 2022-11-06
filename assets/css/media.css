@@ -1,0 +1,181 @@
+@media (max-width: 46.25em) {
+    .text-content {
+        display: none;
+    }
+    .main {
+        position: relative;
+    }
+
+    .header {
+        width: 100%;
+        background-color: #000;
+        height: 46px;
+    }
+
+    .content-section {
+        width: 100%;
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    /* Header and bar */
+    .bar {
+        width: 100%;
+    }
+
+    /* Hide show nav bar */
+    .bar-column {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .showhideNav {
+        height: fit-content;
+    }
+
+    .none {
+        display: none;
+    }
+
+    /* End hide show nav bar */
+
+    .bar .sub-bar {
+        width: 100%;
+        text-align: center;
+    }
+
+    .more-btn:hover > a ~ .sub-bar {
+        display: none;
+    }
+
+    .bar .bar-homeBtn:hover {
+        background-color: #ccc;
+    }
+
+    .bar > li > a {
+        display: block;
+        width: 100%;
+    }
+
+    .bar .bar-homeBtn {
+        display: inline-block;
+        width: auto;
+    }
+
+    .bar .sub-bar a {
+        font-size: 1.8rem;
+    }
+
+    .header-search {
+        display: none;
+    }
+
+    .header-mobile-menu {
+        width: 61px;
+        width: 61px;
+        display: flex;
+        height: 46px;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    .bar > li {
+        width: 100%;
+    }
+
+    /* Responsive The Band */
+    .member {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .member-section {
+        margin: 25px auto;
+    }
+
+    .band-member-name {
+        font-size: 2rem;
+    }
+
+    .band-member-img {
+        height: 220px;
+        width: 220px;
+    }
+
+    /* Responsive Tour Date */
+    .place-list {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .place-item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .place-button {
+        width: 100%;
+        margin-top: 8px;
+        padding: 15px 0;
+    }
+
+    .ticket-status .status {
+        margin-left: 40px;
+    }
+
+    /* Responsive Contact */
+    .contact-content.df {
+        flex-direction: column;
+    }
+
+    .contact-content-about {
+        width: 100%;
+        font-size: 2rem;
+    }
+
+    .contact-name-email {
+        flex-direction: column;
+    }
+
+    .contact-content-about .contact-input {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .contact-content-about .contact-input.message {
+        margin: 0;
+    }
+
+    .contact-content-about.set-margin-top {
+        margin-top: 15px;
+    }
+
+    .contact-submit-btn {
+        width: 100%;
+        margin-top: 8px;
+        padding: 15px 0;
+    }
+}
+
+/* Ticket buy */
+.over-lay .container {
+    width: 80%;
+}
+
+.over-lay .modal-header {
+    height: 100px;
+    line-height: 100px;
+}
+
+/* Social list */
+
+.social-list {
+    font-size: 3rem;
+}
+
+.social-list a {
+    padding: 0 5px;
+}
